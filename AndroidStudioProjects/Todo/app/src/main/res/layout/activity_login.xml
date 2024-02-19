@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Login"
+    tools:ignore="ExtraText">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/login"
+        android:textSize="40sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lgnemail"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="45dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lgnpassword"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="45dp"
+            android:textStyle="italic"
+            android:background="@drawable/rounded_background"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/enter_password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/lgnbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/Login"
+        />
+    <TextView
+        android:id="@+id/clkreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/click_to_register"/>
+</LinearLayout>
