@@ -28,7 +28,7 @@
             android:textStyle="italic"
             android:background="@drawable/rounded_background"
             android:gravity="center"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:layout_marginBottom="30dp"
             android:layout_height="wrap_content"
             android:hint="@string/enter_username"
@@ -45,7 +45,7 @@
             android:gravity="center"
             android:textStyle="italic"
             android:background="@drawable/rounded_background"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:layout_marginBottom="30dp"
             android:hint="@string/enter_email"
             />
@@ -61,7 +61,7 @@
             android:gravity="center"
             android:textStyle="italic"
             android:background="@drawable/rounded_background"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:layout_marginBottom="30dp"
             android:hint="@string/enter_password"
             />
@@ -73,6 +73,8 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginBottom="30dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
         android:text="@string/register"
         />
 
