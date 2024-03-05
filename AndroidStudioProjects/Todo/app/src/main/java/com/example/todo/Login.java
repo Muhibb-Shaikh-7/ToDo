@@ -94,10 +94,12 @@ public class Login extends AppCompatActivity {
                                     Intent i = new Intent(getApplicationContext(),MainActivity.class);
                                     startActivity(i);
                                     finish();
+                                    return;
                                 } else {
                                     // If sign in fails, display a message to the user.
                                     Toast.makeText(Login.this, "Incorrect Credentials",
                                             Toast.LENGTH_SHORT).show();
+
                                 }
                                 if (task.isCanceled()){
                                     Toast.makeText(Login.this, "Login Failed", Toast.LENGTH_SHORT).show();
