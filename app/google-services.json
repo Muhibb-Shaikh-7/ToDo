@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "138205571365",
+    "firebase_url": "https://to-do-bb7bc-default-rtdb.firebaseio.com",
+    "project_id": "to-do-bb7bc",
+    "storage_bucket": "to-do-bb7bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138205571365:android:4f1800f2fc56dae08352cc",
+        "android_client_info": {
+          "package_name": "com.example.todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Tj-LPH21sM35Sp4wwc0qj5EMdOLQgo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
