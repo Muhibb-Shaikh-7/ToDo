@@ -54,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp">
             <CheckBox
+                android:id="@+id/checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
         <TextView
@@ -62,6 +63,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="21sp"
+            android:textColor="@color/red"
             android:text="@string/task"
             android:padding="20dp"/>
         </LinearLayout>

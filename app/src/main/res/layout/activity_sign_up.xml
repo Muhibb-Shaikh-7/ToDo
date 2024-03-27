@@ -13,6 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:gravity="center"
         android:text="@string/create_an_account"/>
@@ -28,6 +29,7 @@
             android:id="@+id/email_create"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textColor="@color/black"
             android:gravity="center"
             android:hint="@string/email"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -44,6 +46,7 @@
             android:id="@+id/password_create"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textColor="@color/black"
             android:gravity="center"
             android:hint="@string/password"
             android:maxLines="1"
@@ -60,6 +63,7 @@
             android:id="@+id/username_create_ET"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textColor="@color/black"
             android:gravity="center"
             android:hint="@string/username"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -71,6 +75,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="21dp"
         android:layout_marginTop="36dp"
+        android:textColor="@color/black"
         android:text="@string/sign_up"/>
 
     <TextView
@@ -80,6 +85,7 @@
         android:textSize="21sp"
         android:textStyle="bold"
         android:gravity="center"
+        android:textColor="@color/black"
         android:text="@string/already_a_registered_user_signin"/>
 
 </LinearLayout>

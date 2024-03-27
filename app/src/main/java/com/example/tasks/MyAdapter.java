@@ -1,11 +1,18 @@
 package com.example.tasks;
 
+import static com.example.tasks.R.id.checkbox;
+import static com.example.tasks.R.id.recyclerview;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.Color;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -63,8 +70,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.TaskViewHolder> {
     public class TaskViewHolder extends RecyclerView.ViewHolder{
         public TextView task,details,dateAdded,name;
         public ImageView image, shareButton;
+        public CheckBox checkBox;
         public String userId,username;
+        int status=1;
 
+        @SuppressLint("WrongViewCast")
         public TaskViewHolder(@NonNull View itemView) {
             super(itemView);
             task=itemView.findViewById(R.id.task_title_list);
@@ -73,13 +83,24 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.TaskViewHolder> {
             name=itemView.findViewById(R.id.task_row_username);
             image=itemView.findViewById(R.id.task_image_list);
             shareButton=itemView.findViewById(R.id.image_row_share_button);
-
+            checkBox=itemView.findViewById(R.id.checkbox);
+            checkBox.setOnClickListener(c->{
+                if(status == 1) {
+                    task.setTextColor(Color.LTGRAY);
+                    status=0;
+                }else{
+                    task.setTextColor(Color.RED);
+                    status=1;
+                }
+            });
+            task.setOnClickListener(t->{
+                task.setTextColor(Color.BLUE);
+            });
             shareButton.setOnClickListener(v->{
 
             });
+
         }
     }
-
-
 
 }

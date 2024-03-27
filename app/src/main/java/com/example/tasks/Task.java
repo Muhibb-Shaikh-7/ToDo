@@ -10,17 +10,27 @@ public class Task {
     private String userId;
     private Timestamp timeAdded;
     private String userName;
+    private String status;
 
     public Task() {
     }
 
-    public Task(String task, String details, String imageURL, String userId, Timestamp timeAdded, String userName) {
+    public Task(String task, String details, String imageURL, String userId, Timestamp timeAdded, String userName, String status) {
         this.task = task;
         this.details = details;
         this.imageURL = imageURL;
         this.userId = userId;
         this.timeAdded = timeAdded;
         this.userName = userName;
+        this.status = status;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public String getTask() {
